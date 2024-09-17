@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Анкетирование Paragraph</title>
+        <link rel="stylesheet" href="../css/style.css"> 
+    </head>
+        <body>
+            <div class="container">
+
+            <h2>Оцените кофейню Paragraph!</h2> 
+            <form action="/submit" method="post">
+                <fieldset>
+                    <legend><span>Ваши контактные данные</span></legend>
+                    <div class="form-group">
+                        <label for="name">Логин</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Пароль</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Электронная почта</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tel">Номер телефона</label>
+                        <input type="tel" id="tel" name="tel" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="file">Промокод</label>
+                        <input type="file" id="file" name="file" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend><span>Оценка кафе</span></legend>
+                    <div class="form-group">
+                        <label>Качество обслуживания персонала?</label><br>
+                        <input type="radio" id="service_excellent" name="service_quality" value="excellent">
+                        <label for="service_excellent">Отлично</label><br>
+                        <input type="radio" id="service_good" name="service_quality" value="good">
+                        <label for="service_good">Хорошо</label><br>
+                        <input type="radio" id="service_average" name="service_quality" value="average">
+                        <label for="service_average">Удовлетворительно</label><br>
+                        <input type="radio" id="service_poor" name="service_quality" value="poor">
+                        <label for="service_poor">Плохо</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label><span>Качество предоставляемой продукции?</span></label><br>
+                        <input type="radio" id="product_excellent" name="product_quality" value="excellent">
+                        <label for="product_excellent">Очень свежая и вкусная</label><br>
+                        <input type="radio" id="product_good" name="product_quality" value="good">
+                        <label for="product_good">Приемлемого качества, может быть лучше</label><br>
+                        <input type="radio" id="product_average" name="product_quality" value="average">
+                        <label for="product_average">Не всегда свежая, требует улучшения</label><br>
+                        <input type="radio" id="product_poor" name="product_quality" value="poor">
+                        <label for="product_poor">Неудовлетворительное качество</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label><span>Интерьер кофейни?</span></label><br>
+                        <input type="radio" id="interior_excellent" name="interior_quality" value="excellent">
+                        <label for="interior_excellent">Отлично оформлен</label><br>
+                        <input type="radio" id="interior_good" name="interior_quality" value="good">
+                        <label for="interior_good">Уютный и комфортный</label><br>
+                        <input type="radio" id="interior_average" name="interior_quality" value="average">
+                        <label for="interior_average">Средний, без особых впечатлений</label><br>
+                        <input type="radio" id="interior_poor" name="interior_quality" value="poor">
+                        <label for="interior_poor">Неудовлетворительный</label>
+                    </div>
+                    <div class="form-group">
+                        <label><span>Общее впечатление?</span></label><br>
+                        <input type="checkbox" id="visit_again" name="impression" value="visit_again">
+                        <label for="visit_again">Обязательно приду еще раз</label><br>
+                        <input type="checkbox" id="recommend" name="impression" value="recommend">
+                        <label for="recommend">Буду рекомендовать друзьям</label><br>
+                        <input type="checkbox" id="unsure" name="impression" value="unsure">
+                        <label for="unsure">Не уверен, приду ли снова</label><br>
+                        <input type="checkbox" id="not_recommend" name="impression" value="not_recommend">
+                        <label for="not_recommend">Не буду рекомендовать</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Дополнительные комментарии</legend>
+                    <div class="form-group">
+                        <label for="comments">Поле для заполнения:</label><br>
+                        <textarea id="comments" rows="4" style="width: 100%;"></textarea>
+                    </div>
+                </fieldset>
+
+                <div class="form-group">
+                    <input type="submit" value="Отправить">
+                    <input type="reset" value="Сбросить">
+                </div>
+            </form>
+            </div>
+        </body>
+</html>    

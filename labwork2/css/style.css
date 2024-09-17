@@ -1,0 +1,63 @@
+body {
+    background-color: #ebbeb9; 
+    height: 100vh; /* Высота body на весь экран */
+}
+
+.container {
+    width: 1440px; 
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+img {
+    width: 300px;       
+    height: 200px;         
+    border-radius: 30px;
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+@font-face {
+    font-family: font1;
+    src: url(ofont.ru_Hero.ttf);
+}
+
+@font-face {
+    font-family: font2;
+    src: url(ofont.ru_Ramona.ttf);
+}
+
+@font-face {
+    font-family: font3;
+    src: url(ofont.ru_New\ Standard\ Old.ttf);
+}
+
+span {
+    font-weight: bold;
+}
+
+/* Центрирование контейнера только на больших экранах */
+@media (min-width: 1440px) {
+    .container {
+        margin: 0 auto; /* Центрирование контейнера */
+    }
+}
